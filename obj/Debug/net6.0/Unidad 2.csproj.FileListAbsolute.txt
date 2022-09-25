@@ -1,0 +1,15 @@
+/home/bryan/Documentos/Lab Programacion 1/Unidad 2/obj/Debug/net6.0/Unidad 2.csproj.AssemblyReference.cache
+/home/bryan/Documentos/Lab Programacion 1/Unidad 2/obj/Debug/net6.0/Unidad 2.GeneratedMSBuildEditorConfig.editorconfig
+/home/bryan/Documentos/Lab Programacion 1/Unidad 2/obj/Debug/net6.0/Unidad 2.AssemblyInfoInputs.cache
+/home/bryan/Documentos/Lab Programacion 1/Unidad 2/obj/Debug/net6.0/Unidad 2.AssemblyInfo.cs
+/home/bryan/Documentos/Lab Programacion 1/Unidad 2/obj/Debug/net6.0/Unidad 2.csproj.CoreCompileInputs.cache
+/home/bryan/Documentos/Lab Programacion 1/Unidad 2/bin/Debug/net6.0/Unidad 2
+/home/bryan/Documentos/Lab Programacion 1/Unidad 2/bin/Debug/net6.0/Unidad 2.deps.json
+/home/bryan/Documentos/Lab Programacion 1/Unidad 2/bin/Debug/net6.0/Unidad 2.runtimeconfig.json
+/home/bryan/Documentos/Lab Programacion 1/Unidad 2/bin/Debug/net6.0/Unidad 2.dll
+/home/bryan/Documentos/Lab Programacion 1/Unidad 2/bin/Debug/net6.0/Unidad 2.pdb
+/home/bryan/Documentos/Lab Programacion 1/Unidad 2/obj/Debug/net6.0/Unidad 2.dll
+/home/bryan/Documentos/Lab Programacion 1/Unidad 2/obj/Debug/net6.0/refint/Unidad 2.dll
+/home/bryan/Documentos/Lab Programacion 1/Unidad 2/obj/Debug/net6.0/Unidad 2.pdb
+/home/bryan/Documentos/Lab Programacion 1/Unidad 2/obj/Debug/net6.0/Unidad 2.genruntimeconfig.cache
+/home/bryan/Documentos/Lab Programacion 1/Unidad 2/obj/Debug/net6.0/ref/Unidad 2.dll
