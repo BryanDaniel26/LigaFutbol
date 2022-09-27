@@ -5,10 +5,8 @@ class LigaFutbol
     private int temporadas;
     private int puntajesFinales;
     private int juegosJugados;
-    private int goles;
     private int jugadores;
     private int PuntuacionFinal;
-    private string equipos = "";
 
     public void nombreEquipos (string equ1, string equ2)
 
@@ -19,78 +17,83 @@ class LigaFutbol
 
     public void SetPrimerEquipo()
     {
-        //agregar for para ingresar el nombre de los jugadores (15 jugadores)
-      //var jugadores = new List<string> {"Pedro Parages","Federico Revuelto", "Antonio Neyra", "Armando Giralt", "Manuel Prast", "Alberto Machimbarrena", "Sotero Aranguren", "Eulogio Aranguren", "Santiago Bernabeu", "Rene Petit", "Juan Monjardin", "Gaspar Rubio", "Jaime Lazcano", "Leonel Messi", "Karim Bensema"}; 
-        int gol = 0;
-        string [] jugadores = {};
-        for (int i = 0; i<=4; i++){
-            Console.WriteLine("Nombre=> \n");
-            Console.ReadLine();
-            Console.WriteLine("Goles=> ", jugadores);
-            gol = System.Convert.ToInt32(Console.ReadLine());
-        }
-        
-       foreach(var nombreJugadores in jugadores)
-       {
-        Console.WriteLine(nombreJugadores + "\n\t\tGoles {0}", gol);
-       }  
+       //Insertar los nombres de los jugadores
+       int cantidad = 3;
+       string [] lista_nombres;
+       int gol = 0;
+       int total = 0;
 
-       Console.WriteLine("\tLista de jugadores: \n");
-       
+        Console.Write("\t------------Jugadores del primer equipo------------ \n\n");
+        lista_nombres = new string[cantidad];
+
+        for(int i = 0; i<cantidad; i++){
+            Console.Write("Nombre {0}: ", i + 1);
+            lista_nombres[i] = Console.ReadLine();
+            //Cantidad de goles por jugador
+            Console.Write("Goles anotados por el jugador: ");
+            gol = System.Convert.ToInt32(Console.ReadLine());
+            //Total de goles del equipo
+            total += gol;
+            //jugadores del equipo
+
+            int [] _total = {gol};
+        }
+
+        for (int i = 0; i < cantidad; i++){
+            Console.WriteLine("{0}. {1}", i + 1, lista_nombres[i]);
+        }
+        Console.WriteLine("Goles totales del equipo: {0}", total);
+
     }
     
-    /*
-    public void SetSegundoEquipo(int gol)
+    
+    public void SetSegundoEquipo()
     {
-        //agregar for para ingresar el nombre de los jugadores (15 jugadores)
-        var jugadores = new List<string> {"Rafael Lesmes", "Sabino Barinaga", "Prueden Sanchez", "Jose Quintana", "Jose Corona", "Adauto Iglesias", "Luis Molowny", "Manuel Fernandez", "Miguel Mendez", "Joaquin Navarro", "Juanito Alonso", "Roque Olsen", "Enrrique Mateos", "Ramon Marsal", "Joseito Fernandez"};
+         //Insertar los nombres de los jugadores
+       int cantidad = 3;
+       string [] lista_nombres;
+       int gol = 0;
+       int total = 0;
 
-        goles = gol;
+        Console.Write("\t------------Jugadores del segundo equipo------------ \n");
+        lista_nombres = new string[cantidad];
 
-        foreach(var nombreJugadores in jugadores)
-        {
-            Console.WriteLine(nombreJugadores + "\n\t\tGoles {0}", gol);
+        for(int i = 0; i<cantidad; i++){
+            Console.Write("\nNombre {0}: ", i + 1);
+            lista_nombres[i] = Console.ReadLine();
+            //Cantidad de goles por jugador
+            Console.Write("Goles anotados por el jugador: ");
+            gol = System.Convert.ToInt32(Console.ReadLine());
+            //Total de goles del equipo
+            total += gol;
+            //jugadores del equipo
+
+            int [] _total = {gol};
         }
+
+        for (int i = 0; i < cantidad; i++){
+            Console.WriteLine("{0}. {1} \n", i + 1, lista_nombres[i]);
+        }
+        Console.WriteLine("Goles totales del equipo: {0}\n", total);
+        
     }
-    */
 
     public void Setjuegos()
     {
         int juegos_eq1, juegos_eq2; 
         
         //Equipo 1
-        Console.WriteLine("\n\nCuantos juegos ha jugado el equipo 1 \n");
+        Console.Write("\nCuantos juegos ha jugado el equipo 1: \n");
         juegos_eq1 = System.Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("El equipo 1 ha jugado {0} juegos", juegos_eq1);
+        Console.WriteLine("juegos del equipo {0}\n", juegos_eq1);
 
         //Equipo 2
-        Console.WriteLine("\n\nCuantos juegos ha jugado el equipo 2 \n");
+        Console.WriteLine("Cuantos juegos ha jugado el equipo 2\n");
         juegos_eq2 = System.Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("El equipo 2 ha jugado {0} juegos", juegos_eq2);
+        Console.WriteLine("Juegos del equipo {0}\n", juegos_eq2);
 
-        //Marcador Final
                
     }
-
-    public void SetPuntuacion()
-    {
-        int equipo1, equipo2;
-
-        Console.Write("\n\n\t\tEl partido ha culminado con la siguiente puntuacion: \n");
-
-        //Obtener la cantidad de goles por equipo
-        Console.Write("Goles marcados por el equipo 1: ");
-        equipo1 = System.Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("Goles del primer equipo: \n{0}", equipo1);
-        
-        Console.Write("Goles marcados por el equipo 2: ");
-        equipo2 = System.Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("Goles del segundo equipo: \n{0}", equipo2);
-
-        
-    }
-  
-
 
 }
 
@@ -107,25 +110,19 @@ class LabCSharp02
         LigaFutbol nombreEquipos = new LigaFutbol();
         nombreEquipos.nombreEquipos("Tigres", "Leones\n"); //Agregando el nombre a los equipos
 
-         // //Juegos jugados por equipo
-        LigaFutbol juegosJugados = new LigaFutbol();
-        juegosJugados.Setjuegos();
-
         //Equipo 1
         LigaFutbol miEquipo1 = new LigaFutbol();
-        Console.WriteLine("\n\tJugadores de los Tigres \n");
+        Console.WriteLine("\t\tPrimer equipo \n");
         miEquipo1.SetPrimerEquipo();
 
-        // //Equipo 2
-        // LigaFutbol miEquipo2 = new LigaFutbol();
-        // Console.WriteLine("\n\tJugadores de los Leones\n");
-        // miEquipo2.SetSegundoEquipo(2);
+        //Equipo 2
+        LigaFutbol miEquipo2 = new LigaFutbol();
+        Console.WriteLine("\t\tSegundo equipo");
+        miEquipo2.SetSegundoEquipo();
 
-        //Marcador final
-        LigaFutbol marcadorFinal = new LigaFutbol();
-        marcadorFinal.SetPuntuacion();
-
-        
-        
+        //Juegos jugados por equipo
+        LigaFutbol juegosJugados = new LigaFutbol();
+        juegosJugados.Setjuegos();
+   
     }
 }
