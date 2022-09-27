@@ -8,7 +8,7 @@ class LigaFutbol
     private int goles;
     private int jugadores;
     private int PuntuacionFinal;
-    private string equipos;
+    private string equipos = "";
 
     public void nombreEquipos (string equ1, string equ2)
 
@@ -17,22 +17,32 @@ class LigaFutbol
     }
 
 
-    public void SetPrimerEquipo(int gol)
+    public void SetPrimerEquipo()
     {
+        //agregar for para ingresar el nombre de los jugadores (15 jugadores)
+      //var jugadores = new List<string> {"Pedro Parages","Federico Revuelto", "Antonio Neyra", "Armando Giralt", "Manuel Prast", "Alberto Machimbarrena", "Sotero Aranguren", "Eulogio Aranguren", "Santiago Bernabeu", "Rene Petit", "Juan Monjardin", "Gaspar Rubio", "Jaime Lazcano", "Leonel Messi", "Karim Bensema"}; 
+        int gol = 0;
+        string [] jugadores = {};
+        for (int i = 0; i<=4; i++){
+            Console.WriteLine("Nombre=> \n");
+            Console.ReadLine();
+            Console.WriteLine("Goles=> ", jugadores);
+            gol = System.Convert.ToInt32(Console.ReadLine());
+        }
         
-
-       var jugadores = new List<string> {"Pedro Parages","Federico Revuelto", "Antonio Neyra", "Armando Giralt", "Manuel Prast", "Alberto Machimbarrena", "Sotero Aranguren", "Eulogio Aranguren", "Santiago Bernabeu", "Rene Petit", "Juan Monjardin", "Gaspar Rubio", "Jaime Lazcano", "Leonel Messi", "Karim Bensema"}; 
-
-       goles = gol;
-
        foreach(var nombreJugadores in jugadores)
        {
         Console.WriteLine(nombreJugadores + "\n\t\tGoles {0}", gol);
        }  
+
+       Console.WriteLine("\tLista de jugadores: \n");
        
     }
+    
+    /*
     public void SetSegundoEquipo(int gol)
     {
+        //agregar for para ingresar el nombre de los jugadores (15 jugadores)
         var jugadores = new List<string> {"Rafael Lesmes", "Sabino Barinaga", "Prueden Sanchez", "Jose Quintana", "Jose Corona", "Adauto Iglesias", "Luis Molowny", "Manuel Fernandez", "Miguel Mendez", "Joaquin Navarro", "Juanito Alonso", "Roque Olsen", "Enrrique Mateos", "Ramon Marsal", "Joseito Fernandez"};
 
         goles = gol;
@@ -42,6 +52,7 @@ class LigaFutbol
             Console.WriteLine(nombreJugadores + "\n\t\tGoles {0}", gol);
         }
     }
+    */
 
     public void Setjuegos()
     {
@@ -83,6 +94,7 @@ class LigaFutbol
 
 }
 
+
 //Clase principal
 
 class LabCSharp02
@@ -91,9 +103,9 @@ class LabCSharp02
     {
 
         //Presentacion
-        Console.WriteLine("\t\tBienvenido a Nueva Tempora de la Liga de Futbol");
+        Console.WriteLine("\t\tBienvenido a Nueva Tempora de la Liga de Futbol\n");
         LigaFutbol nombreEquipos = new LigaFutbol();
-        nombreEquipos.nombreEquipos("Tigres", "Leones"); //Agregando el nombre a los equipos
+        nombreEquipos.nombreEquipos("Tigres", "Leones\n"); //Agregando el nombre a los equipos
 
          // //Juegos jugados por equipo
         LigaFutbol juegosJugados = new LigaFutbol();
@@ -102,12 +114,12 @@ class LabCSharp02
         //Equipo 1
         LigaFutbol miEquipo1 = new LigaFutbol();
         Console.WriteLine("\n\tJugadores de los Tigres \n");
-        miEquipo1.SetPrimerEquipo(3);
+        miEquipo1.SetPrimerEquipo();
 
-        //Equipo 2
-        LigaFutbol miEquipo2 = new LigaFutbol();
-        Console.WriteLine("\n\tJugadores de los Leones\n");
-        miEquipo2.SetSegundoEquipo(2);
+        // //Equipo 2
+        // LigaFutbol miEquipo2 = new LigaFutbol();
+        // Console.WriteLine("\n\tJugadores de los Leones\n");
+        // miEquipo2.SetSegundoEquipo(2);
 
         //Marcador final
         LigaFutbol marcadorFinal = new LigaFutbol();
