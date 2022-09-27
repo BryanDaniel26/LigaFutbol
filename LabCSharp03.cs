@@ -9,7 +9,7 @@ equipos, sus puntajes finales y la clasificación de cada equipo en función de 
     Asignatura: Laboratorio de Lenguaje de Programacion 1
     Maestro: Alejandro Alcantara
     Seccion: INF 5130-14
-
+    Github: https://github.com/BryanTdesign/LigaFutbol
 */
 
 using System;
