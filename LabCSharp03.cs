@@ -1,4 +1,18 @@
-﻿using System;
+﻿/*
+Una liga de fútbol tiene muchos jugadores. Cada año hay tres temporadas y La liga reúne equipos para
+cada temporada. Cada equipo está compuesto por 15 jugadores. Los goles marcados por cada jugador
+durante cada temporada son registrados. Se realiza un seguimiento de los juegos jugados entre los
+equipos, sus puntajes finales y la clasificación de cada equipo en función de sus juegos ganados y perdidos.
+
+    Programa realizado por: Bryan Daniel Mendez Barrios
+    Matricula: 100591967
+    Asignatura: Laboratorio de Lenguaje de Programacion 1
+    Maestro: Alejandro Alcantara
+    Seccion: INF 5130-14
+
+*/
+
+using System;
 
 class LigaFutbol
 {
@@ -18,7 +32,7 @@ class LigaFutbol
     public void SetPrimerEquipo()
     {
        //Insertar los nombres de los jugadores
-       int cantidad = 3;
+       int cantidad = 15;
        string [] lista_nombres;
        int gol = 0;
        int total = 0;
@@ -50,7 +64,7 @@ class LigaFutbol
     public void SetSegundoEquipo()
     {
          //Insertar los nombres de los jugadores
-       int cantidad = 3;
+       int cantidad = 15;
        string [] lista_nombres;
        int gol = 0;
        int total = 0;
@@ -99,6 +113,7 @@ class LigaFutbol
 
 
 //Clase principal
+//Tester class
 
 class LabCSharp02
 {
@@ -117,7 +132,7 @@ class LabCSharp02
 
         //Equipo 2
         LigaFutbol miEquipo2 = new LigaFutbol();
-        Console.WriteLine("\t\tSegundo equipo");
+        Console.WriteLine("\t\t\nSegundo equipo");
         miEquipo2.SetSegundoEquipo();
 
         //Juegos jugados por equipo
